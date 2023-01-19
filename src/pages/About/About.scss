@@ -1,0 +1,121 @@
+.about-page {
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .second {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    .title{
+      justify-self: center;
+    }
+
+    .projects {
+ 
+      justify-content: center;
+      width: 500px;
+      .slide {
+        width: 500px;
+        margin-right: 10px;
+        .articles{
+          margin-left: 2rem !important;
+        }
+        
+      }
+
+      .project {
+        color: rgb(10, 5, 10);
+        
+        height: 35vh;
+       
+        border-radius: 10px;
+        transition: 700ms;
+        &:hover {
+          transform: scale(1.01);
+        }
+
+        a {
+          display: flex;
+          font-size: 25px;
+          color: rgb(10, 5, 10);
+          line-height: 70px;
+          position: relative;
+          justify-content: center;
+          transform: translateY(200px);
+          text-decoration: none;
+          transition: 300ms;
+        }
+      }
+    }
+  }
+
+  .text-zone {
+    display: grid;
+    margin-left: 15%;
+    margin-top: 5rem;
+    width: 35%;
+    vertical-align: middle;
+    max-height: 90%;
+    .h11 {
+      color: rgb(10, 5, 10);
+      font-size: 50px;
+      margin: 0;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-weight: 400;
+    }
+    p {
+      font-size: 15px;
+      color: rgb(10, 5, 10);
+      font-family: sans-serif;
+      min-width: fit-content;
+      animation: pulse 1s;
+
+      &:nth-child(1) {
+        animation-delay: 1.1s;
+      }
+      &:nth-child(2) {
+        animation-delay: 1.2s;
+      }
+      &:nth-child(3) {
+        animation-delay: 1.3s;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+display: flex;
+
+    .second {
+      display: flex;
+      justify-items: flex-end;
+      align-items: flex-end;
+      .title{
+        margin-left: 2rem !important;
+      }
+      
+      .projects {
+        width: 250px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+        margin-bottom: 1rem;
+
+        .cards{
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          align-items: center;
+        
+        .project {
+          position: relative;
+          width: 400px;
+          margin-left: 100px;
+        }
+        }
+      }
+    }
+  }
+}

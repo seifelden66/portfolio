@@ -1,0 +1,74 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+
+  .text-zone {
+    display: grid;
+    margin-left: 25%;
+    margin-top: 5rem;
+    width: 35%;
+    vertical-align: middle;
+    max-height: 90%;
+    h1 {
+      color: rgb(10, 5, 10);
+      font-size: 50px;
+      margin: 0;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-weight: 400;
+    }
+  }
+  .contact-form {
+    form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      button {
+        width: 20%;
+        justify-self: center;
+      }
+      .label {
+        justify-self: center;
+        display: grid;
+        width: 50%;
+        gap: 0.25rem;
+        input {
+          border-radius: 5px;
+          padding: 5px;
+          background-color: #b0bc7579;
+          border-style: none;
+        }
+        #msg {
+          height: 60px;
+          border-radius: 5px;
+          padding: 5px;
+          background-color: #b0bc7579;
+          border-style: none;
+        }
+      }
+      button {
+        color: rgb(10, 5, 10);
+        background-color: #767e4dee;
+        border-style: none;
+        border-radius: 1rem;
+        width: 75px;
+        padding: 3px;
+        font-size: medium;
+        
+      }
+    }
+    @media (max-width: 700px) {
+      form {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
