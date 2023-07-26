@@ -26,18 +26,7 @@ const Home = () => {
           </div>
           <div className="skill">
             <CircularProgressbar
-              value={92}
-              text="HTML"
-              styles={buildStyles({
-                textSize:15,
-                rotation: 0.25,
-                textColor: "rgb(10, 5, 10)",
-                backgroundColor: "rgb(10, 5, 10)",
-                pathColor: "rgb(10, 5, 10)",
-              })}
-            />
-            <CircularProgressbar
-              value={95}
+              value={90}
               text="CSS"
               styles={buildStyles({
                 textSize:15,
@@ -72,6 +61,17 @@ const Home = () => {
             <CircularProgressbar
               value={85}
               text="SCSS"
+              styles={buildStyles({
+                textSize:15,
+                rotation: 0.25,
+                textColor: "rgb(10, 5, 10)",
+                backgroundColor: "rgb(10, 5, 10)",
+                pathColor: "rgb(10, 5, 10)",
+              })}
+            />
+            <CircularProgressbar
+              value={95}
+              text="vue"
               styles={buildStyles({
                 textSize:15,
                 rotation: 0.25,

@@ -5,6 +5,10 @@ import { Slide } from "react-slideshow-image";
 import slide1 from "../../assets/myreads.jpg";
 import slide2 from "../../assets/weatherapp.jpg";
 import slide3 from "../../assets/mart.jpg";
+import slide4 from "../../assets/humm.jpg";
+import slide5 from "../../assets/multistep.jpg";
+
+
 
 
 const About = () => {
@@ -18,8 +22,7 @@ const About = () => {
             <br />
             Hello! my name is seif, and I am a computer scinece student with a
             passionfor creating user-friendly websites. I have a strong
-            background in HTML, CSS, and javascript, as well as some experience
-            with React
+            background in HTML, CSS, and javascript, experienced with Vue, Nuxt3, and React
           </p>
           <p>
             <h2>2. My Skills:</h2>
@@ -89,6 +92,48 @@ const About = () => {
                 <div className="articles">
                   <p>this is a frontend e-commerce application</p>
                   <h2><a href="https://github.com/seifelden66/market">source code </a></h2>
+                </div>
+              </card>
+              <card className="cards">
+                <div
+                  className="project"
+                  style={{
+                    backgroundImage: `url(${slide4})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "contain",
+                  }}
+                >
+                  
+                </div>
+                <div className="articles">
+                  <p>this is a website for food lovers</p>
+                  <div className="links">
+                    <h2><a href="https://github.com/seifelden66/humm-clone">source code </a></h2>
+                    <h2><a href="https://hummclone.netlify.app/en">live demo </a></h2>
+                  </div>
+                  
+                </div>
+              </card>
+              <card className="cards">
+                <div
+                  className="project"
+                  style={{
+                    backgroundImage: `url(${slide5})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "contain",
+                  }}
+                >
+                  
+                </div>
+                <div className="articles">
+                  <p>this is a website for food lovers</p>
+                  <div className="links">
+                  <h2><a href="https://github.com/seifelden66/multistep-form">source code </a></h2>
+                  <h2><a href="https://effulgent-rugelach-6e2d19.netlify.app/">live demo </a></h2>
+                  </div>
+
                 </div>
               </card>
             </Slide>
