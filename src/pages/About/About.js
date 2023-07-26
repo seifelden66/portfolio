@@ -47,6 +47,7 @@ const About = () => {
                 <div
                   className="project"
                   style={{
+                    
                     backgroundImage: `url(${slide1})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",

@@ -1,4 +1,8 @@
 .about-page {
+  @media (max-width:992px) {
+    text-align: left;
+    
+  }
   height: 60%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -16,8 +20,10 @@
  
       justify-content: center;
       width: 500px;
+      
       .slide {
         width: 500px;
+        
         margin-right: 10px;
         .articles{
           text-align: center;
@@ -65,15 +71,10 @@
   }
 
   .text-zone {
-    display: grid;
-    margin-left: 15%;
-    margin-top: 5rem;
-    width: 35%;
-    vertical-align: middle;
-    max-height: 90%;
+    
     .h11 {
       color: rgb(10, 5, 10);
-      font-size: 50px;
+      padding: 0;
       margin: 0;
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       font-weight: 400;
@@ -101,19 +102,20 @@
 @media (max-width: 786px) {
   .container {
 display: flex;
+.text-zone{
 
+}
     .second {
-      transform: translatex(-30%) scale(.99);
-      display: flex;
-      justify-items: flex-end;
-      align-items: flex-end;
       
-      .title{
-        margin-left: 2rem !important;
+      transform: scale(.7) translateX(-10%) !important;
+      .slide{
+        transform:scale(.7)  !important;
+
       }
       
+      
       .projects {
-        width: 250px;
+        width: 150px;
         display: grid;
         grid-template-columns: 1fr;
         justify-self: center;
@@ -136,8 +138,3 @@ display: flex;
   }
 }
 
-@media (max-width: 415px) {
-  .second {
-    transform: translatex(-20%) scale(.75) !important;
-  }
-}
