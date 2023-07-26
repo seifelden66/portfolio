@@ -71,7 +71,7 @@ const Home = () => {
             />
             <CircularProgressbar
               value={85}
-              text="PYTHON"
+              text="SCSS"
               styles={buildStyles({
                 textSize:15,
                 rotation: 0.25,
@@ -82,7 +82,7 @@ const Home = () => {
             />
             <CircularProgressbar
               value={50}
-              text="UI/UX"
+              text="PYTHON"
               styles={buildStyles({
                 textSize:15,
                 rotation: 0.25,

@@ -84,14 +84,16 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 7890px) {
   .container {
 display: flex;
 
     .second {
+      transform: translatex(-30%) scale(.99);
       display: flex;
       justify-items: flex-end;
       align-items: flex-end;
+      
       .title{
         margin-left: 2rem !important;
       }
@@ -117,5 +119,11 @@ display: flex;
         }
       }
     }
+  }
+}
+
+@media (max-width: 415px) {
+  .second {
+    transform: translatex(-20%) scale(.75) !important;
   }
 }

@@ -87,8 +87,8 @@ const About = () => {
                   
                 </div>
                 <div className="articles">
-                  <p>this is an application to ecommerce</p>
-                  <h2>under progress..</h2>
+                  <p>this is a frontend e-commerce application</p>
+                  <h2><a href="https://github.com/seifelden66/market">source code </a></h2>
                 </div>
               </card>
             </Slide>
